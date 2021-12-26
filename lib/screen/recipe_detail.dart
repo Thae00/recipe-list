@@ -39,6 +39,17 @@ class _RecipeDetailState extends State<RecipeDetail> {
               ),
             ),
             // Add Expanded
+            Expanded(
+              child: ListView.builder(
+                itemCount: widget.recipe.ingredients.length,
+                itemBuilder: (context, index) {
+                  final ingredient = widget.recipe.ingredients[index];
+                  // Add ingredient.quantity
+                  return Text(
+                      "${ingredient.quantity} ${ingredient.measure} ${ingredient.name}");
+                },
+              ),
+            )
             //Add Slider() here
           ],
         ),
