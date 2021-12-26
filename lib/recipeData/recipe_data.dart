@@ -35,7 +35,7 @@ class Recipe {
     Recipe(
       'Friedrice',
       'assets/food_friedrice.jpg',
-      4,
+      3,
       [
         Ingredient(
           1,
